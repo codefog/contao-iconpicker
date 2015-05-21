@@ -46,9 +46,6 @@ class IconPickerWidget extends \Widget
         $GLOBALS['TL_CSS'][] = Manager::getCssFile($this->iconSets);
         $GLOBALS['TL_CSS']['iconpicker'] = 'system/modules/iconpicker/assets/css/backend.min.css';
         $GLOBALS['TL_JAVASCRIPT']['iconpicker'] = 'system/modules/iconpicker/assets/js/backend.min.js';
-
-        // @todo drop later
-        $this->varValue = 'icon-phone';
     }
 
     /**
