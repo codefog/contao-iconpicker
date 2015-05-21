@@ -12,6 +12,10 @@
     <a href="<?php echo $this->url; ?>" class="tl_submit"><?php echo $GLOBALS['TL_LANG']['MSC']['iconpicker.select']; ?></a>
 </div>
 
+<?php if ($this->hasErrors()): ?>
+    <?php echo $this->getErrorAsHTML(); ?>
+<?php endif; ?>
+
 <script>
     window.addEvent('domready', function() {
         new IconPicker($('iconpicker_<?php echo $this->id; ?>'), {
