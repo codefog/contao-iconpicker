@@ -18,7 +18,6 @@ var IconPicker = new Class({
      */
     elements: {
         container: null,
-        hidden: null,
         preview: null,
         input: null,
         button: null
@@ -42,7 +41,6 @@ var IconPicker = new Class({
         var self = this;
 
         self.elements.container = el;
-        self.elements.hidden = el.getElement('input[type="hidden"]');
         self.elements.preview = el.getElement('.preview span');
         self.elements.input = el.getElement('input[type="text"]');
         self.elements.button = el.getElement('a');

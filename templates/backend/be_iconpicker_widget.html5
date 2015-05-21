@@ -3,13 +3,11 @@
 </h3>
 
 <div id="iconpicker_<?php echo $this->id; ?>" class="iconpicker_container">
-    <input type="hidden" name="<?php echo $this->name; ?>" id="ctrl_<?php echo $this->id; ?>" value="<?php echo $this->value; ?>">
-
     <div class="preview">
         <span class="<?php echo $this->value; ?>"></span>
     </div>
 
-    <input type="text" class="tl_text" value="<?php echo $this->value; ?>">
+    <input type="text" id="ctrl_<?php echo $this->id; ?>" class="tl_text" name="<?php echo $this->name; ?>" value="<?php echo $this->value; ?>">
 
     <a href="<?php echo $this->url; ?>" class="tl_submit"><?php echo $GLOBALS['TL_LANG']['MSC']['iconpicker.select']; ?></a>
 </div>

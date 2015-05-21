@@ -44,8 +44,8 @@ class IconPickerWidget extends \Widget
 
         // Include the assets
         $GLOBALS['TL_CSS'][] = Manager::getCssFile($this->iconSets);
-        $GLOBALS['TL_CSS']['iconpicker'] = 'system/modules/iconpicker/assets/css/backend.min.css';
-        $GLOBALS['TL_JAVASCRIPT']['iconpicker'] = 'system/modules/iconpicker/assets/js/backend.min.js';
+        $GLOBALS['TL_CSS']['iconpicker'] = 'system/modules/iconpicker/assets/css/backend' . (\Config::get('debugMode') ? '' : '.min') . '.css';
+        $GLOBALS['TL_JAVASCRIPT']['iconpicker'] = 'system/modules/iconpicker/assets/js/backend' . (\Config::get('debugMode') ? '' : '.min') . '.js';
     }
 
     /**
