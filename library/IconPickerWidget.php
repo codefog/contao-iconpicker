@@ -66,18 +66,6 @@ class IconPickerWidget extends \Widget
     }
 
     /**
-     * Return an array if the "multiple" attribute is set
-     *
-     * @param mixed $input
-     *
-     * @return mixed
-     */
-    protected function validator($input)
-    {
-        return $input;
-    }
-
-    /**
      * Generate the widget and return it as string
      *
      * @return string
