@@ -14,7 +14,7 @@
 /**
  * Extend the tl_layout palette
  */
-$GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = str_replace('external;', 'external;{iconsets_legend:hide},iconsets;', $GLOBALS['TL_DCA']['tl_layout']['palettes']['default']);
+$GLOBALS['TL_DCA']['tl_layout']['palettes']['default'] = str_replace('loadingOrder;', 'loadingOrder;{iconsets_legend:hide},iconsets;', $GLOBALS['TL_DCA']['tl_layout']['palettes']['default']);
 
 /**
  * Add fields to tl_layout
