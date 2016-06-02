@@ -69,7 +69,7 @@ class Manager
                 continue;
             }
 
-            $combiner->addMultiple($engine->getCssFiles($iconSet));
+            $combiner->addMultiple($engine->getCssFiles($iconSet), null, 'all');
         }
 
         if (!$combiner->hasEntries()) {
